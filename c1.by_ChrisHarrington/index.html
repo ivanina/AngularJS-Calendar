@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="demo">
+<head >
+    <meta charset="UTF-8">
+    <title>Calendar</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.css" />
+
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.3/moment.min.js"></script>
+
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+    <!--<script src="https://code.angularjs.org/1.6.4/angular.min.js"></script>-->
+
+    <script type="text/javascript" src="js/app.js"></script>
+</head>
+<body ng-controller="calendarDemo">
+
+<h1>Calendar by Chris Harrington</h1>
+<span>This page demonstrates the use of a calendar control built in Angular JS. It allows the user to choose a date.</span>
+<span>The calendar itself is an Angular JS directive.<br/>
+    Also use the Moment.js, a library that allows for easier manipulation of time than the standard JavaScript libraries.</span>
+<p>
+    Source: <a href="https://www.codementor.io/angularjs/tutorial/angularjs-calendar-directives-less-cess-moment-font-awesome">
+    AngularJS Tutorial Series: Part 1 – Building a Calendar with LESS CSS, Font Awesome, and Moment
+    </a>
+</p>
+<p>
+    <label>Selected date: <b>{{day.format('dddd, MMMM Do YYYY')}}</b></label>
+</p>
+<div>
+    <calendar selected="day"></calendar>
+</div>
+
+
+
+</body>
+</html>
